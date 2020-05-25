@@ -1,5 +1,5 @@
 body{
-    background-color: brown;
+    background-color: blue;
   }
   h1{
     font-family: '';
@@ -10,4 +10,5 @@ body{
   }
   a{
     font-family: '';
+    color: aqua;
   }
