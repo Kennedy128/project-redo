@@ -13,13 +13,13 @@ On loading the website:
 * The user can view images taken at a location e.g Nairobi by clicking the location name in the locations list.
 * The user can search for images for a specific category e.g Nature from the search form in the navigation bar.
 # Technologies Used
-HTML and CSS
-Python
-Django
-Postgres
-Heroku
-jquery to add feature styles like pop ups
-Git and GitHub
+* HTML and CSS
+* Python
+* Django
+* Postgres
+* Heroku
+* jquery to add feature styles like pop ups
+* Git and GitHub
 # Set up and Installation
  Prerequisites
 The user will require git, django, postgres and python3.6 installed in their machine. To install,` use the following commands
