@@ -36,7 +36,7 @@ The user will require git, django, postgres and python3.6 installed in their mac
 To access this application on your command line, you need to clone it git clone https://github.com/Kennedy128/django-redo.git
 
 # Known Bugs
-the first picture does not display detail but the rest are responsive.some pictures you can copy the link while others you cant. Contact kennedymbithi12@gmail.com for more info
+the first picture does not display detail but the rest are responsive.some pictures you can copy the link while others you cant same as the responsive. Contact kennedymbithi12@gmail.com for more info
 
 # Licence
 This project is under the MIT licence
