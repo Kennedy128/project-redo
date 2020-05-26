@@ -20,8 +20,8 @@ Postgres
 Heroku
 js
 Git and GitHub
-Set up and Installation
-# Prerequisites
+# Set up and Installation
+ Prerequisites
 The user will require git, django, postgres and python3.6 installed in their machine. To install,` use the following commands
 
 #git $ sudo apt install git-all
