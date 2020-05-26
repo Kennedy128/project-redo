@@ -18,7 +18,7 @@ Python
 Django
 Postgres
 Heroku
-js
+jquery to add feature styles like pop ups
 Git and GitHub
 # Set up and Installation
  Prerequisites
