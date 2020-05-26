@@ -18,6 +18,7 @@ Python
 Django
 Postgres
 Heroku
+js
 Git and GitHub
 Set up and Installation
 # Prerequisites
