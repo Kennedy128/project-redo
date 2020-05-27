@@ -12,6 +12,7 @@ On loading the website:
 * The user can access details of each image by clicking on the image. The user can also copy the url to the image by clicking the copy url button in the details.
 * The user can view images taken at a location e.g Nairobi by clicking the location name in the locations list.
 * The user can search for images for a specific category e.g Nature from the search form in the navigation bar.
+* use the Superuser admin to install my images.my admin user name is kennedy and password is Brian128
 # Technologies Used
 * HTML and CSS
 * Python
