@@ -1,61 +1,38 @@
+ 
 from django.test import TestCase
-from .models import Image,Category,Location 
+from .models import Image,Profile
+
 # Create your tests here.
-
-class CategoryTestClass(TestCase):
-    '''
-    test class to test methods of category class
-    '''
-    # Set up method
-    def setUp(self):
-        self.category= Category(category="nature")
-
-    #testing class instance
-    def test_instance(self):
-        self.assertTrue(isinstance(self.category,Category))  
-
-    # Testing Save Method
-    def test_save_method(self):
-        self.category.save_category()
-        categories = Category.objects.all()
-        self.assertTrue(len(categories) > 0)      
-
-class LocationTestClass(TestCase):
-    '''
-    test class to test methods of the location class
-    '''
-    # Set up method
-    def setUp(self):
-        self.location= Location(location="Nairobi")
-
-    #testing class instance
-    def test_instance(self):
-        self.assertTrue(isinstance(self.location,Location))
-
-    # Testing Save Method
-    def test_save_method(self):
-        self.location.save_location()
-        locations= Location.objects.all()
-        self.assertTrue(len(locations) > 0)
-
 class ImageTestClass(TestCase):
     '''
-    test class to test methods of the image class
+    test class to test methods of the  image class
     '''
-    # Set up method
     def setUp(self):
-        self.category= Category(category="nature")
-        self.location=  Location(location="Nairobi")
-        self.image = Image(name='img1',picture='http://img1',description='nice picture',category=self.category,location=self.location)
-
-    #testing class instance
-    def test_instance(self):
-        self.assertTrue(isinstance(self.image,Image))
-
-    # Testing Save Method
+        self.profile=Profile(user="kennedy",profile_pic="pic",bio="person")
+        self.image=Image(image="image",name="image",caption="nice",profile=self.profile)
     def test_save_method(self):
         self.image.save_image()
         images = Image.objects.all()
-        self.assertTrue(len(images) > 0)    
+        self.assertTrue(len(images) > 0) 
 
+    def test_delete_method(self):L
+        self.image.delete_image()
+        images=Image.objects.all()
+        self.assertTrue(len(images) > 0)        
 
+class ProfileTestClass(TestCase):
+    '''
+    test class to test methods of the profile class
+    '''
+    def setUp(self):
+        self.profile=Profile(user="kennedy",profile_pic="pic",bio="person")
+
+    def test_save_method(self):
+        self.profile.save_profile()
+        profiles = Profile.objects.all()
+        self.assertTrue(len(profiles) > 0)
+
+    def test_delete_method(self):
+        self.profile.delete_profile()
+        profiles= Profile.objects.all()
+        self.assertTrue(len(profiles) > 0)

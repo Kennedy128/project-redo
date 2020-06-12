@@ -15,6 +15,7 @@ import os
 import django_heroku
 import dj_database_url
 from decouple import Csv,config
+import cloudinary
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -145,6 +146,11 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+cloudinary.config( 
+  cloud_name = 'dxdxswd5n',
+  api_key = '661975664241327',
+  api_secret = 'V9B-GN5Jps7BY0Wxd70PMOjpqvI',
+)
 
 
 
